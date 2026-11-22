@@ -2,6 +2,16 @@
 
 面向 AR 场景的位姿对齐物体重建：结合多视图图像和已知相机位姿，通过三维查询投影、多视图特征聚合及 SS／SLat 两阶段条件生成，重建完整物体 Mesh。
 
+## 真实多视图输入
+
+模型使用 RGB 视图、前景掩膜和相机参数。下面两张图取自配套 Tracker 仓库公开的同一帧手机采集样例。
+
+| RGB 采集帧 | 同一帧的前景掩膜 |
+| --- | --- |
+| ![手机拍摄的桌面玩偶](https://raw.githubusercontent.com/yeruoxiangchen/Tracker/248da216384f20e609125c2898242e0c0f4cfe3e/data/wogua/images_%E6%89%8B%E6%9C%BA/0000.jpg) | ![玩偶在同一采集帧中的前景掩膜](https://raw.githubusercontent.com/yeruoxiangchen/Tracker/248da216384f20e609125c2898242e0c0f4cfe3e/data/wogua/masks_%E6%89%8B%E6%9C%BA/mask_0000.png) |
+
+[观看这组视图的采集视频](https://github.com/yeruoxiangchen/Tracker/blob/248da216384f20e609125c2898242e0c0f4cfe3e/data/wogua/wogua_%E6%89%8B%E6%9C%BA.mp4)
+
 ## 目录
 
 ```text
